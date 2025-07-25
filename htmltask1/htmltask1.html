@@ -1,0 +1,83 @@
+<html>
+<head>
+    <title>Html task</title>
+</head>
+<body>
+<!--1-->
+<h1 align="center"><font color="red" size="6">fonts img 1</font></h1>
+<p><font>This is text without font attribute</font></p>
+<p><font color="cyan">This is text with font color</font></p>
+<p><font face="chiller">This is text with chiller font face</font></p>
+<p><font size="6">This is text with increased font size</font></p>
+<h2 ><font color="cyan" >************************</font></h2>
+<!--2-->
+<h1 align="center"><font color="red" size="6">Entity char img 2</font></h1>
+<pre>
+#include&lt;stdio.h&gt;
+#include&lt;conio.h&gt;
+int&nbsp;exp (int base, int power)
+{
+    if (power == 0)
+    {   return 1;   }
+    else
+    {
+        power--;
+        return base * exp(base, power);
+    }
+}
+main()
+{
+    int x = 2, y = 3;
+    clrscr();
+    printf("\n %d ^ %d = %d", x, y, exp(x,y));
+    getch();return 0;
+}
+ </pre>
+<h2 ><font color="cyan" >************************</font></h2>
+<!--3-->
+<h1 align="center"><font color="red" size="6"> Nested lists img 3</font></h1>
+<ol>
+<li>Fruits
+  <ol>
+      <li>Mango</li>
+      <li>Orange</li>
+  </ol>
+</li>
+ <li>Vegetables
+   <ol>
+       <li>Cabbage</li>
+       <li>Capsicum
+           <ol>
+               <li>Green Capsicum</li>
+               <li>Yellow Capsicum</li>
+               <li>Red Capsicum</li>
+            </ol>
+       </li>
+    </ol>
+  </li>
+</ol>
+
+<h2 ><font color="cyan" >************************</font></h2>
+<!--4-->
+<h1 align="center"><font color="red" size="6"> images img 4</font></h1>
+<img src="1.png" alt="logo">
+<h1>BLACK GOOSE BISTRO</h1>
+<hr color="cyan">
+<h3><font color="brown">The Restaurant</font></h3>
+<p>
+The Black Goose Bistro offers casual lunch and dinner fare in a hip atmosphere.
+ The menu changes regularly to highlight the freshest ingredients.
+</p>
+<h3><font color="brown">Catering</font></h3>
+<p>
+You have fun... <i>we’ll handle the cooking.</i>
+ <b>Black Goose Catering</b> can handle events from snacks for bridge club to elegant corporate fundraisers.
+</p>
+<h3><font color="brown"s>Location and Hours</h3></font>
+<p>
+Seekonk, Massachusetts;<br>
+<i>Monday through Thursday 11am to 9pm,<br>
+Friday and Saturday, 11am to midnight</i>
+</p>
+</body>
+</html>
