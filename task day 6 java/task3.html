@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <title>0</title>
+  <style>
+    .box {
+      border: 2px solid red;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      margin: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container"></div>
+
+  <script>
+    let counter = 1;
+    const container = document.getElementById("container");
+
+    const interval = setInterval(() => {
+      const div = document.createElement("div");
+      div.className = "box";
+      div.textContent = counter;
+      container.appendChild(div);
+
+      // تحديث عنوان التبويب
+      document.title = counter;
+
+      if (counter >= 30) {
+        clearInterval(interval); // وقف التكرار عند 30
+      }
+
+      counter++;
+    }, 1000);
+  </script>
+
+</body>
+</html>
